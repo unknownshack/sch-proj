@@ -1,0 +1,101 @@
+<div class="banner jarallax">
+  <div class="w3layouts-header-top">
+    <div class="container">
+      <div class="w3-header-top-grids">
+        <div class="w3-header-top-left">
+          <p style="font-size: smaller;"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +977 984565826</p>
+        </div>
+        <div class="w3-header-top-right">
+          <div class="agileinfo-social-grids">
+            <ul>
+              <li><a href="/login"><i class="fa fa-user-md fa-lg"></i></a></li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="head">
+    <div class="container">
+      <div class="navbar-top">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+             <div class="navbar-brand logo ">
+              <h1><a href="">Wedding <span>Plan</span></a></h1>
+            </div>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav link-effect-4">
+              <li [ngClass]="{ 'active': componentName === callingComponent.Home }"><a href="">Home</a></li>
+              <li [ngClass]="{'active': componentName === callingComponent.Notice}"><a href="/notice">Notice</a></li>
+              <li [ngClass]="{ 'active': componentName === callingComponent.Gallery }"><a href="./gallery">Gallery</a></li>
+              <!-- Other list items with similar ngClass bindings -->
+              <li [ngClass]="{ 'active': componentName === callingComponent.Contact }"><a href="/contact">Contact</a></li>
+              <!-- <li style="background-color: #ff5722;"><a href="/book-now">Book Now</a></li> -->
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div *ngIf="componentName != callingComponent.Home">
+    <div class="agileinfo-banner">
+      <div class="container">
+        <h2>{{componentName}}</h2>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="componentName == callingComponent.Home" class="w3layouts-banner-slider">
+    <div class="container">
+      <div class="slider">
+        <div class="callbacks_container">
+          <ul class="rslides callbacks callbacks1" id="slider4">
+            <li>
+              <div class="agileits-banner-info">
+                <h3>Lorem ipsum</h3>
+                <p>Etiam ut maximus mauris, eu pretium neque. Donec nibh lectus, blandit id metus non, bibendum dictum quam.</p>
+                <div class="w3-button">
+                  <div class="w3ls-button">
+                    <a href="single.html">More</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"> </div>
+        <script>
+          // You can also use "$(window).load(function() {"
+          $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+            auto: true,
+            pager:true,
+            nav:false,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+              $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+              $('.events').append("<li>after event fired.</li>");
+            }
+            });
+        
+          });
+         </script>
+        <!--banner Slider starts Here-->
+      </div>
+    </div>
+  </div>
+</div>

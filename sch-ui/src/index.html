@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BanquetUi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+
+  <script src="assets/js/jarallax.js"></script>
+  <script type="text/javascript">
+  /* init Jarallax */
+  $('.jarallax').jarallax({
+    speed: 0.5,
+    imgWidth: 1366,
+    imgHeight: 768
+  })
+  </script>
+  <script src="assets/js/responsiveslides.min.js"></script>
+  <script type="text/javascript" src="assets/js/easing.js"></script>
+  <script type="text/javascript" src="assets/js/move-top.js"></script>
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear' 
+      };
+    */
+              
+    $().UItoTop({ easingType: 'easeOutQuart' });
+              
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
