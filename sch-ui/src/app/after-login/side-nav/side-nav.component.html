@@ -5,12 +5,12 @@
   </div>
 
   <div>
-    <div class="nav-item" (click)="navigate('study-resource')">
+    <div [class.active]="activeLink === 'study-resource'" class="nav-item" (click)="navigate('study-resource')">
       <fa-icon [icon]="faBook"></fa-icon>
       <span>Resources</span>
     </div>
-
-    <div class="nav-item" (click)="navigate('events')">
+  
+    <div [class.active]="activeLink === 'events'" class="nav-item" (click)="navigate('events')">
       <fa-icon [icon]="faCalendar"></fa-icon>
       <span>Events</span>
     </div>

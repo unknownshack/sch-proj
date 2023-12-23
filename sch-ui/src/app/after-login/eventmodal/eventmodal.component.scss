@@ -1,0 +1,19 @@
+@import '../../../../node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+.eventmodal-container{
+  width: 1200px;  
+
+  @media screen and (max-width: 600px) {
+    width: 600px;
+  }
+}
+
+.modal{
+  backdrop-filter: brightness(0.8);
+}
+
+.border-silver{
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+

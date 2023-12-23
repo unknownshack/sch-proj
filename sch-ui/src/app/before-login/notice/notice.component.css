@@ -1,3 +1,7 @@
+@import "../../../assets/css/bootstrap.css";
+@import "../../../assets/css/font-awesome.css";
+@import "../../../assets/css/initial-unorganized.css";
+
 table {
   border: 1px solid #ccc;
   border-collapse: collapse;

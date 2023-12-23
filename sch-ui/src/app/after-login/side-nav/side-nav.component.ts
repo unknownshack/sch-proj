@@ -32,6 +32,8 @@ export class SideNavComponent {
   faCalendar = faCalendar
 
   UserRole = UserRole;
+  activeLink: string = 'study-resource';
+
 
   @Input() role = UserRole.Student;
 
@@ -39,8 +41,9 @@ export class SideNavComponent {
 
   }
 
-  navigate(url: string){
-    let fullUrl = '/himchuli/(content:'+url+'))';
+  navigate(link: string){
+    this.activeLink = link;
+    let fullUrl = '/himchuli/(content:'+link+'))';
     this.router.navigateByUrl(fullUrl);
   }
 

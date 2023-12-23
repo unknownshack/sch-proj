@@ -1,0 +1,33 @@
+<div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: block;" aria-modal="true" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="onClose()"></button>
+      </div>
+      <div class="modal-body">
+        <mdb-form-control class="border-silver">
+          <input mdbInput type="text" id="form1" class="form-control"/>
+          <label mdbLabel class="form-label" for="form1">Example label</label>
+        </mdb-form-control>
+        <mdb-form-control>
+          <input
+            type="date"
+            mdbInput
+            mdbDatePicker
+            name="datepicker"
+            placeholder="Choose a date"
+            class="form-control"
+          />
+          <label mdbLabel for="datepicker">Select Date:</label>
+        </mdb-form-control>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal" (click)="onClose()">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" (click)="saveEvent()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
