@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CallingComponent } from '../constants';
+import { CallingComponent } from '../../constants';
 
 @Component({
   selector: 'app-notice',

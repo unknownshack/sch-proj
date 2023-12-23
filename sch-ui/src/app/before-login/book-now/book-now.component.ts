@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
-import { CallingComponent } from '../constants';
+import { CallingComponent } from '../../constants';
 import { NgForm } from '@angular/forms';
 import { IgxStepperComponent } from 'igniteui-angular';
 

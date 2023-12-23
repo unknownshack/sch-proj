@@ -11,7 +11,7 @@ import {
   faBook,
   faCalendar
 } from '@fortawesome/free-solid-svg-icons';
-import { UserRole } from '../constants';
+import { UserRole } from '../../constants';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
